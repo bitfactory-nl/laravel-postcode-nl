@@ -37,6 +37,8 @@ class AddressController extends Controller
      */
     public function get(string $postcode, string $houseNumber, string $houseNumberAddition = null): JsonResponse
     {
+        $postcode = strtoupper(str_replace(' ', '', $postcode));
+
         try {
             $address = $this->lookup->lookup(str_replace(' ', '', $postcode), (int)$houseNumber, $houseNumberAddition);
             return response()->json($address);
