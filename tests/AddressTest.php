@@ -1,6 +1,6 @@
 <?php
 
-use Speelpenning\PostcodeNl\Address;
+use BitfactoryNL\PostcodeNl\Address;
 
 class AddressTest extends TestCase
 {

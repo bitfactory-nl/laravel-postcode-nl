@@ -1,12 +1,12 @@
 <?php
 
-namespace Speelpenning\PostcodeNl;
+namespace BitfactoryNL\PostcodeNl;
 
 use Illuminate\Foundation\Application;
 use Illuminate\Support\ServiceProvider;
-use Speelpenning\PostcodeNl\Http\PostcodeNlClient;
-use Speelpenning\PostcodeNl\Services\AddressLookup;
-use Speelpenning\PostcodeNl\Validators\AddressLookupValidator;
+use BitfactoryNL\PostcodeNl\Http\PostcodeNlClient;
+use BitfactoryNL\PostcodeNl\Services\AddressLookup;
+use BitfactoryNL\PostcodeNl\Validators\AddressLookupValidator;
 
 /**
  * Class PostcodeNlServiceProvider

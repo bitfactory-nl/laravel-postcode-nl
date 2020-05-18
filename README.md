@@ -13,7 +13,7 @@ A client using the Postcode.nl REST API for Dutch address verification.
 Pull the package in through Composer:
 
 ```bash
-composer require speelpenning/laravel-postcode-nl
+composer require bitfactorynl/laravel-postcode-nl
 ```
 
 Next, register an account with Postcode.nl to obtain a key and secret. See https://api.postcode.nl/#register for 
@@ -22,7 +22,7 @@ further information. Once you have a key and secret, store them in your .env fil
 Add the following service provider to your application config:
 
 ```php
-Speelpenning\PostcodeNl\PostcodeNlServiceProvider::class,
+bitfactorynl\PostcodeNl\PostcodeNlServiceProvider::class,
 ```
 
 Walk through the configuration section to make things work.
@@ -40,7 +40,7 @@ Example:
 <?php
 
 use Exception;
-use Speelpenning\PostcodeNl\Services\AddressLookup;
+use BitfactoryNL\PostcodeNl\Services\AddressLookup;
 
 class AddressDumper {
 

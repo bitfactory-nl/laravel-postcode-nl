@@ -1,14 +1,14 @@
 <?php
 
-namespace Speelpenning\PostcodeNl\Http;
+namespace BitfactoryNL\PostcodeNl\Http;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ClientException;
 use Illuminate\Config\Repository;
 use Psr\Http\Message\ResponseInterface;
-use Speelpenning\PostcodeNl\Exceptions\AccountSuspended;
-use Speelpenning\PostcodeNl\Exceptions\AddressNotFound;
-use Speelpenning\PostcodeNl\Exceptions\Unauthorized;
+use BitfactoryNL\PostcodeNl\Exceptions\AccountSuspended;
+use BitfactoryNL\PostcodeNl\Exceptions\AddressNotFound;
+use BitfactoryNL\PostcodeNl\Exceptions\Unauthorized;
 
 class PostcodeNlClient
 {

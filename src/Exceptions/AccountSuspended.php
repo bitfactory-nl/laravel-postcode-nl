@@ -1,6 +1,6 @@
 <?php
 
-namespace Speelpenning\PostcodeNl\Exceptions;
+namespace BitfactoryNL\PostcodeNl\Exceptions;
 
 use Exception;
 

@@ -1,10 +1,10 @@
 <?php
 
 use Illuminate\Validation\ValidationException;
-use Speelpenning\PostcodeNl\Exceptions\AccountSuspended;
-use Speelpenning\PostcodeNl\Exceptions\AddressNotFound;
-use Speelpenning\PostcodeNl\Exceptions\Unauthorized;
-use Speelpenning\PostcodeNl\Services\AddressLookup;
+use BitfactoryNL\PostcodeNl\Exceptions\AccountSuspended;
+use BitfactoryNL\PostcodeNl\Exceptions\AddressNotFound;
+use BitfactoryNL\PostcodeNl\Exceptions\Unauthorized;
+use BitfactoryNL\PostcodeNl\Services\AddressLookup;
 
 class AddressLookupTest extends TestCase
 {
@@ -49,7 +49,7 @@ class AddressLookupTest extends TestCase
         $lookup = app(AddressLookup::class);
         $address = $lookup->lookup('1000AA', 1);
 
-        $this->assertInstanceOf(Speelpenning\PostcodeNl\Address::class, $address);
+        $this->assertInstanceOf(BitfactoryNL\PostcodeNl\Address::class, $address);
     }
 
     public function testNonExistingAddressThrowsAddressNotFound()

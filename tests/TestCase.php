@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Foundation\Testing\TestCase as LaravelTestCase;
-use Speelpenning\PostcodeNl\PostcodeNlServiceProvider;
+use BitfactoryNL\PostcodeNl\PostcodeNlServiceProvider;
 
 abstract class TestCase extends LaravelTestCase
 {

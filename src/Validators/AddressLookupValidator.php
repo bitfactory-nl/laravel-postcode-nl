@@ -1,6 +1,6 @@
 <?php
 
-namespace Speelpenning\PostcodeNl\Validators;
+namespace BitfactoryNL\PostcodeNl\Validators;
 
 use Illuminate\Http\JsonResponse;
 use Illuminate\Validation\Factory;

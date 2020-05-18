@@ -1,14 +1,14 @@
 <?php
 
-namespace Speelpenning\PostcodeNl\Services;
+namespace BitfactoryNL\PostcodeNl\Services;
 
 use Illuminate\Validation\ValidationException;
-use Speelpenning\PostcodeNl\Address;
-use Speelpenning\PostcodeNl\Exceptions\AccountSuspended;
-use Speelpenning\PostcodeNl\Exceptions\AddressNotFound;
-use Speelpenning\PostcodeNl\Exceptions\Unauthorized;
-use Speelpenning\PostcodeNl\Http\PostcodeNlClient;
-use Speelpenning\PostcodeNl\Validators\AddressLookupValidator;
+use BitfactoryNL\PostcodeNl\Address;
+use BitfactoryNL\PostcodeNl\Exceptions\AccountSuspended;
+use BitfactoryNL\PostcodeNl\Exceptions\AddressNotFound;
+use BitfactoryNL\PostcodeNl\Exceptions\Unauthorized;
+use BitfactoryNL\PostcodeNl\Http\PostcodeNlClient;
+use BitfactoryNL\PostcodeNl\Validators\AddressLookupValidator;
 
 class AddressLookup
 {
