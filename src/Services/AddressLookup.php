@@ -66,6 +66,6 @@ class AddressLookup
      */
     public function getUri(string $postcode, int $houseNumber, string $houseNumberAddition = null): string
     {
-        return "https://api.postcode.nl/rest/addresses/$postcode/$houseNumber/$houseNumberAddition";
+        return "https://api.postcode.eu/nl/v1/addresses/postcode/$postcode/$houseNumber/$houseNumberAddition";
     }
 }
